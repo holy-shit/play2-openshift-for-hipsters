@@ -1,5 +1,8 @@
-Play framework 2 for OpenShift pre-configuration
-================================================
+Play framework 2 for OpenShift 
+==============================
+quick pre-configuration
+=======================
+
 
 Very easy to read and modify.
 In fact, you'll have to read it, because you going to live with that.
@@ -30,7 +33,7 @@ Your_uuid (and all other staff) in your terminal scrollback, just copy-paste it.
 
 6) Comment "target" in your default Play2 gitignore IF you want to store releases in git repo. It will enable you to use push-to-deploy method out of the box. But if you use free account limited to 1Gb of hdd you probably do not want this. This is the reason why there is this repository, which allows to make manual deploy of your app.
 
-7) Move all important settings from application.conf to openshift.com, don't forget application.secret. (it is your business to figure out how to make a comfortable synchronization between this files, it depends on your project)
+7) Move all important settings from application.conf to openshift.conf, don't forget application.secret. (it is your business to figure out how to make a comfortable synchronization between this files, it depends on your project)
 
 8) Push it to OpenShift (git push)
 
