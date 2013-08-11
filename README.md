@@ -1,8 +1,6 @@
 Play framework 2 for OpenShift 
 ==============================
-quick pre-configuration
-=======================
-
+## quick pre-configuration
 
 Very easy to read and modify.
 In fact, you'll have to read it, because you going to live with that.
