@@ -1,0 +1,9 @@
+#/bin/bash
+cd $OPENSHIFT_DATA_DIR
+source ./env-deps
+source ./env-vars
+cd $OPENSHIFT_REPO_DIR
+play clean ${JAVA_OPTS}
+play compile ${JAVA_OPTS}
+play stage ${JAVA_OPTS}
+cd $OPENSHIFT_DATA_DIR

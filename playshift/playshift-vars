@@ -1,0 +1,28 @@
+#!/bin/bash
+export MY_DATA_DIR=${OPENSHIFT_DATA_DIR%/}
+export CUSTOM_BIN=$MY_DATA_DIR/bin
+
+export GEM_HOME=$MY_DATA_DIR/gems/1.8.7
+
+export SCALA_HOME=$MY_DATA_DIR/scala
+
+export SBT_PATH=$MY_DATA_DIR/sbt
+export SBT_DIR=$MY_DATA_DIR/.sbt
+
+export IVY_DIR=$MY_DATA_DIR/.ivy2
+export JAVA_OPTS="$JAVA_OPTS  -Dsbt.global.base=\"$SBT_DIR\" -Divy.default.ivy.user.dir=\"$IVY_DIR\" -Dsbt.ivy.home=\"$IVY_DIR\" -Divy.home=\"$IVY_DIR\"" 
+
+export PLAY_HOME=$MY_DATA_DIR/play
+
+export PATH="$CUSTOM_BIN:$SCALA_HOME/bin:$SBT_PATH/bin:$PLAY_HOME:$GEM_HOME/bin:$PATH"
+
+echo PATH = $PATH
+echo SCALA_HOME = $SCALA_HOME
+echo SBT_PATH = $SBT_PATH
+echo PLAY_HOME = $PLAY_HOME
+echo GEM_HOME = $GEM_HOME
+
+#echo `scala -version`
+#echo "Sbt = "`sbt --version`
+#echo "Play = "`play --version`
+

@@ -1,0 +1,61 @@
+#!/bin/bash
+cd $OPENSHIFT_DATA_DIR
+
+source ./playshift-vars
+
+if ! gem spec compass > /dev/null 2>&1; then
+  echo "Installing gem compass"
+  gem install compass
+else
+  echo "Gem compass already installed"
+fi
+
+if [[ -d bin ]]; then
+  echo "Custom bin dir exists"
+else
+  echo "Installing custom bin dir"
+  mkdir ./bin
+fi
+
+if [[ -d sbt ]]; then
+  echo "SBT already installed"
+else
+  echo "Installing SBT"
+  if [[ -f sbt.tgz ]]; then
+    echo "SBT already downloaded"
+  else
+    curl -o sbt.tgz http://scalasbt.artifactoryonline.com/scalasbt/sbt-native-packages/org/scala-sbt/sbt/0.12.2/sbt.tgz
+  fi    
+  tar zxvf sbt.tgz sbt
+  echo "SBT installed"
+fi
+
+if [[ -d scala ]]; then
+  echo "Scala already installed"
+else
+  echo "Installing SBT"
+  if [[ -f scala.tgz ]]; then
+    echo "Scala already downloaded"
+  else
+    curl -o scala.tgz http://www.scala-lang.org/files/archive/scala-2.10.2.tgz
+  fi    
+  tar -zxvf ./scala.tgz
+  mv ./scala-2.10.2 ./scala
+  echo "Scala installed"
+fi
+
+if [[ -d play ]]; then
+  echo "Play already installed"
+else
+  echo "Installing Play"
+  if [[ -f play.tgz ]]; then
+    echo "Play already downloaded"
+  else
+     curl -o play.zip http://downloads.typesafe.com/play/2.1.3/play-2.1.3.zip
+  fi    
+  unzip play.zip
+  mv play-2.1.3 play
+  echo "Play installed"
+fi
+
+
