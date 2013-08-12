@@ -16,11 +16,14 @@ export PLAY_HOME=$MY_DATA_DIR/play
 
 export PATH="$CUSTOM_BIN:$SCALA_HOME/bin:$SBT_PATH/bin:$PLAY_HOME:$GEM_HOME/bin:$PATH"
 
+export JAVACMD=drip
+
 echo PATH = $PATH
 echo SCALA_HOME = $SCALA_HOME
 echo SBT_PATH = $SBT_PATH
 echo PLAY_HOME = $PLAY_HOME
 echo GEM_HOME = $GEM_HOME
+echo JAVACMD = $JAVACMD
 
 #echo `scala -version`
 #echo "Sbt = "`sbt --version`

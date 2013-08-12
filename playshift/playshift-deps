@@ -17,6 +17,15 @@ else
   mkdir ./bin
 fi
 
+if [[ -f ./bin/drip ]]; then
+  echo "Drip already installed"
+else
+  echo "Installing Drip"
+  curl -L http://drip.flatland.org > ./bin/drip
+  chmod 755 ./bin/drip  
+  echo "SBT installed"
+fi
+
 if [[ -d sbt ]]; then
   echo "SBT already installed"
 else
