@@ -18,6 +18,8 @@ export PATH="$CUSTOM_BIN:$SCALA_HOME/bin:$SBT_PATH/bin:$PLAY_HOME:$GEM_HOME/bin:
 
 export JAVACMD=drip
 
+export GIT_SSH="$OPENSHIFT_DATA_DIR/playshift-gitssh"
+
 echo PATH = $PATH
 echo SCALA_HOME = $SCALA_HOME
 echo SBT_PATH = $SBT_PATH
