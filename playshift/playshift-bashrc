@@ -1,0 +1,6 @@
+#!/bin/bash
+function playshift-mode {
+source $OPENSHIFT_DATA_DIR/playshift-vars
+}
+export -f playshift-mode
+playshift-mode

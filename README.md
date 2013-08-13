@@ -54,13 +54,21 @@ Your_uuid (and all other staff) in your terminal scrollback, just copy-paste it.
 
 17) You can add this line
 
-    source $OPENSHIFT_DATA_DIR/playshift-vars
+    if [ -f $OPENSHIFT_DATA_DIR/.bashrc ]; then
+        source $OPENSHIFT_DATA_DIR/playshift-bashrc
+        export -f playshift-mode
+    fi
+
 
 to your bash profile, e.g. with
 
     vim app-root/data/.bash_profile
 
-it is useful if you hack production environment without modifying control scripts
+and type just after login
+
+    playshift-mode
+
+It will export all environment variables and so on. It is useful if you hack production environment without modifying control scripts
 
 
 17) Latest update brings playshift-update script. It will copy control scripts from play2-openshift-for-hipsters repo that will be located in your $OPENSHIFT_DATA_DIR. Please note that openshift-deps will clone this repo by default, but will NOT run update script automatically. This is done in case you have edited control scripts manually, and in case of automatic update playscript-update would have destroyed all of your changes. You are not required to use playshift-update, I created this thing for my own needs.
