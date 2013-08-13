@@ -67,4 +67,10 @@ else
   echo "Play installed"
 fi
 
-
+if [[ -d $PLAYSHIFT_GIT_HOME ]]; then
+  echo "Playshift git dir exists"
+else
+  echo "Installing playshift git"
+  git clone https://github.com/olegchir/play2-openshift-for-hipsters.git  
+  echo "Playshift git installed"
+fi

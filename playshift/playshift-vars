@@ -20,6 +20,8 @@ export JAVACMD=drip
 
 export GIT_SSH="$OPENSHIFT_DATA_DIR/playshift-gitssh"
 
+export PLAYSHIFT_GIT_HOME="$OPENSHIFT_DATA_DIR/play2-openshift-for-hipsters"
+
 echo PATH = $PATH
 echo SCALA_HOME = $SCALA_HOME
 echo SBT_PATH = $SBT_PATH
