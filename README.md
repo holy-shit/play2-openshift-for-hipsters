@@ -49,6 +49,8 @@ Your_uuid (and all other staff) in your terminal scrollback, just copy-paste it.
 
 16) PROFIT
 
-[17) Send me a beer, if you don't mind]
+[17) Latest update brings playshift-update script. It will copy control scripts from play2-openshift-for-hipsters repo that will be located in your $OPENSHIFT_DATA_DIR. Please note that openshift-deps will clone this repo by default, but will NOT run update script automatically. This is done in case you have edited control scripts manually, and in case of automatic update playscript-update would have destroyed all of your changes. You are not required to use playshift-update, I created this thing for my own needs.
 
-[18) Files from .openshift dir based on https://github.com/opensas/play2-openshift-quickstart, you can send your beer to opensas too]
+[18) Send me a beer, if you don't mind]
+
+[19) Files from .openshift dir based on https://github.com/opensas/play2-openshift-quickstart, you can send your beer to opensas too]
