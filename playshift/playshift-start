@@ -2,4 +2,4 @@
 cd $OPENSHIFT_DATA_DIR
 source ./playshift-vars
 source ./playshift-deps
-./env-launcher
+./playshift-launcher
