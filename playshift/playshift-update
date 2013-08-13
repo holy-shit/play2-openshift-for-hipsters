@@ -1,0 +1,3 @@
+#!/bin/bash
+cd $OPENSHIFT_DATA_DIR
+cp --force $OPENSHIFT_DATA_DIR/play2-openshift-for-hipsters/playshift/playshift-* $OPENSHIFT_DATA_DIR
