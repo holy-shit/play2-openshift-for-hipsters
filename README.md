@@ -54,7 +54,7 @@ Your_uuid (and all other staff) in your terminal scrollback, just copy-paste it.
 
 17) You can add this line
 
-    if [ -f $OPENSHIFT_DATA_DIR/.bashrc ]; then
+    if [ -f $OPENSHIFT_DATA_DIR/playshift-bashrc ]; then
         source $OPENSHIFT_DATA_DIR/playshift-bashrc
         export -f playshift-mode
     fi
