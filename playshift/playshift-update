@@ -3,7 +3,7 @@ cd $OPENSHIFT_DATA_DIR
 source ./playshift-vars
 
 cd $PLAYSHIFT_GIT_HOME
-git reset -hard HEAD
+git reset --hard HEAD
 git clean -dfx
 git fetch
 git pull
