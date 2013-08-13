@@ -68,7 +68,7 @@ and type just after login
 
     playshift-mode
 
-It will export all environment variables and so on. It is useful if you hack production environment without modifying control scripts.
+It will export all environment variables and so on. You can change into $OPENSHIFT_DATA_DIR by typing 'odd' now. It is useful if you hack production environment without modifying control scripts.
 
 Why you have to type this 'playshift-mode' instead of using .bash_profile directly and typing nothing? Because .bash_profile is sourced in before other scripts that overwrite PATH settings in .bash_profile. I think it's a bug, but this ticket closed as "not a bug": https://bugzilla.redhat.com/show_bug.cgi?id=916434
 
