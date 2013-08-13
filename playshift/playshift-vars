@@ -1,5 +1,12 @@
 #!/bin/bash
 export MY_DATA_DIR=${OPENSHIFT_DATA_DIR%/}
+
+export $ODD=$MY_DATA_DIR
+function odd {
+	cd $ODD
+}
+export -f odd
+
 export CUSTOM_BIN=$MY_DATA_DIR/bin
 export PLAYSHIFT_BIN=$MY_DATA_DIR
 
