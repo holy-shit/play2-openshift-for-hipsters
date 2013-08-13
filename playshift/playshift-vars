@@ -1,7 +1,7 @@
 #!/bin/bash
 export MY_DATA_DIR=${OPENSHIFT_DATA_DIR%/}
 
-export $ODD=$MY_DATA_DIR
+export ODD=$MY_DATA_DIR
 function odd {
 	cd $ODD
 }
