@@ -2,9 +2,12 @@
 cd $OPENSHIFT_DATA_DIR
 source ./playshift-vars
 
+cd $PLAYSHIFT_GIT_HOME
 git reset -hard HEAD
 git clean -dfx
 git fetch
 git pull
 
 cp --force $PLAYSHIFT_GIT_HOME/playshift/playshift-* $OPENSHIFT_DATA_DIR
+
+cd $OPENSHIFT_DATA_DIR
