@@ -15,7 +15,7 @@ export JAVA_OPTS="$JAVA_OPTS  -Dsbt.global.base=\"$SBT_DIR\" -Divy.default.ivy.u
 
 export PLAY_HOME=$MY_DATA_DIR/play
 
-export PATH="$CUSTOM_BIN:PLAYSHIFT_BIN:$SCALA_HOME/bin:$SBT_PATH/bin:$PLAY_HOME:$GEM_HOME/bin:$PATH"
+export PATH="$CUSTOM_BIN:$PLAYSHIFT_BIN:$SCALA_HOME/bin:$SBT_PATH/bin:$PLAY_HOME:$GEM_HOME/bin:$PATH"
 
 export JAVACMD=drip
 
