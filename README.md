@@ -1,6 +1,7 @@
 Play framework 2 for OpenShift 
 ==============================
-** DEPRECATED **
+
+**DEPRECATED**
 
 for historical purposes only
 
